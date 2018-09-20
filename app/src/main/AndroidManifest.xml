@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobitechs.ashAppointment.appointment">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <receiver
+            android:name="com.mobitechs.ashAppointment.internetConnectivity.NetworkChangeReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.mobitechs.ashAppointment.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobitechs.ashAppointment.MainActivity"/>
+        <activity android:name="com.mobitechs.ashAppointment.Login"/>
+        <activity android:name="com.mobitechs.ashAppointment.Appointment_Details" />
+        <activity android:name="com.mobitechs.ashAppointment.Appointment" />
+        <activity android:name="com.mobitechs.ashAppointment.sliderActivity.WelcomeActivity"/>
+        <activity android:name="com.mobitechs.ashAppointment.Total_AppointMent"/>
+    </application>
+
+</manifest>

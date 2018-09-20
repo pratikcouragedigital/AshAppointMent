@@ -1,0 +1,11 @@
+
+
+Project Name    AshAppoitment
+version 	1.0.0	
+versionCode 	1	
+keyAlias 	release_Key
+keyPassword 	Pratik@10
+storePassword 	Pratik@10	
+storeFile	ashAppointmentKey.jks	
+applicationId	com.mobitechs.ashAppointment
+

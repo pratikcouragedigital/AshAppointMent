@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MyAppointments</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <!--slider activity-->
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+
+    <string name="showcase_notice_title">Add Notice</string>
+    <string name="showcase_notice_message">You Can add Notice For Student,Staff.</string>
+
+    <string name="showcase_homework_title">Filter Homework</string>
+    <string name="showcase_homework_message">You Filter Homework List Acording To Date wise or Subject wise.</string>
+
+    <string name="showcase_t_homework_title">Add / Filter Homework</string>
+    <string name="showcase_t_homework_message">You Can Add Homework. Also You Can Filter Homework List Acording To Date wise or Standard, Division, Subject wise.</string>
+
+    <string name="showcase_t_absentStudent_title">Absent Student List </string>
+    <string name="showcase_t_absentStudent_message">You Can Mark Student To Present Manually. </string>
+
+    <string name="showcase_attendance_title">Own Attendance Details</string>
+    <string name="showcase_attendance_message">You Can Check Timing Details On Clicking Any Date.</string>
+
+    <string name="showcase_ua_absentStudent_title">Absent Student and StaffList </string>
+    <string name="showcase_ua_absentStudent_message">You Can Mark Student As Well As Staff To Present Manually. </string>
+
+    <string name="showcase_addChild_title">Add Child </string>
+    <string name="showcase_addChild_message">You Can Add Another Child as New User. </string>
+</resources>

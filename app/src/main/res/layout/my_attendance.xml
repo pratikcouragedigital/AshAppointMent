@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="left|top"
+        android:orientation="horizontal">
+
+        <!--<Button-->
+            <!--android:id="@+id/btnHome"-->
+            <!--android:layout_width="@dimen/_30sdp"-->
+            <!--android:layout_height="@dimen/_30sdp"-->
+            <!--android:background="@drawable/home_red" />-->
+
+        <ImageView
+            android:id="@+id/prevMonth"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/calendar_left_arrow_selector" />
+
+        <TextView
+            android:id="@+id/currentMonth"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/nextMonth"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/calendar_right_arrow_selector" />
+
+        <!--<Button-->
+        <!--android:id="@+id/addEvent"-->
+        <!--android:layout_width="54sp"-->
+        <!--android:layout_height="60sp"-->
+        <!--android:background="@drawable/plus" />-->
+    </LinearLayout>
+
+    <!--<Button-->
+    <!--android:id="@+id/selectedDayMonthYear"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_below="@+id/buttonlayout"-->
+    <!--android:background="@drawable/calendar_top_header"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--android:textColor="#FFFFFF" >-->
+    <!--</Button>-->
+
+    <RelativeLayout
+        android:id="@+id/daysLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonlayout"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@drawable/calendar_days">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/calendarheader"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/calendar_days"/>-->
+
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daysLayout"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:numColumns="7">
+    </GridView>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/calendar">
+
+        <RelativeLayout
+            android:id="@+id/cardViewLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/colorIndicator"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/_10sdp"-->
+            <!--android:layout_marginRight="@dimen/_10sdp"-->
+            <!--android:layout_marginTop="@dimen/_8sdp"-->
+            <!--card_view:cardCornerRadius="@dimen/_2sdp"-->
+            <!--card_view:cardElevation="@dimen/_2sdp">-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/colorIndicatorLayout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/_10sdp">-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/colorForPresent"-->
+            <!--android:layout_width="@dimen/_20sdp"-->
+            <!--android:layout_height="@dimen/_20sdp"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:background="@color/colorGreen500" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtPresent"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/_5sdp"-->
+            <!--android:layout_marginTop="@dimen/_8sdp"-->
+            <!--android:layout_toRightOf="@+id/colorForPresent"-->
+            <!--android:text="For Present" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/colorForAbsent"-->
+            <!--android:layout_width="@dimen/_20sdp"-->
+            <!--android:layout_height="@dimen/_20sdp"-->
+            <!--android:layout_below="@+id/colorForPresent"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:background="@color/colorred500" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtAbsnt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/colorForPresent"-->
+            <!--android:layout_marginLeft="@dimen/_5sdp"-->
+            <!--android:layout_marginTop="@dimen/_8sdp"-->
+            <!--android:layout_toRightOf="@+id/colorForAbsent"-->
+            <!--android:text="For Absent" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/colorLateMark"-->
+            <!--android:layout_width="@dimen/_20sdp"-->
+            <!--android:layout_height="@dimen/_20sdp"-->
+            <!--android:layout_below="@+id/colorForAbsent"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:background="@color/fabBtnColor" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtLateMarks"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/colorForAbsent"-->
+            <!--android:layout_marginLeft="@dimen/_5sdp"-->
+            <!--android:layout_marginTop="@dimen/_8sdp"-->
+            <!--android:layout_toRightOf="@+id/colorLateMark"-->
+            <!--android:text="For Late Marks" />-->
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/totalDaysCardView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/_5sdp"-->
+            <!--android:layout_marginRight="@dimen/_5sdp"-->
+            <!--android:layout_marginTop="@dimen/_8sdp"-->
+            <!--android:layout_toRightOf="@+id/colorIndicator"-->
+            <!--card_view:cardCornerRadius="@dimen/_2sdp"-->
+            <!--card_view:cardElevation="@dimen/_2sdp">-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/monthlyReportLayout"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/_10sdp">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/totalDaysInMonth"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/_2sdp"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="@dimen/_10sdp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/presentDaysInMonth"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/totalDaysInMonth"-->
+            <!--android:padding="@dimen/_2sdp"-->
+            <!--android:textColor="@color/colorBlack" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/absentDaysInMonth"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/presentDaysInMonth"-->
+            <!--android:padding="@dimen/_2sdp"-->
+            <!--android:textColor="@color/colorBlack" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/lateMarksInMonth"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/absentDaysInMonth"-->
+            <!--android:padding="@dimen/_2sdp"-->
+            <!--android:textColor="@color/colorBlack" />-->
+
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
